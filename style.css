@@ -1,0 +1,160 @@
+body{
+    background-size: 30px 30px;
+    background-color: #9b998f;
+    background-image: linear-gradient(to right, #cfcdc3 1px, transparent 1px), linear-gradient(to bottom, #cfcdc3 1px, transparent 1px);
+    background-attachment: fixed;
+    font-family: 'Courier New', Courier, monospace;
+}
+  
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+b{
+    background-color: #90d61f;
+}
+  
+/*Probably replace nav with icons, bg color will be eliminated then*/
+.nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #3b3b38; 
+    /* background-color: #3b3b38; */
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Tooltip text */
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #3b3b38;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+  }
+  
+  /* Show the tooltip text when you mouse over the tooltip container */
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.landing{
+    background-color: #cfcdc3;
+    color: #3b3b38;  
+    width: 50vw;
+    padding: 15px;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+.innerLanding{
+    border: 1px solid #d16a26;
+    padding: 15px;
+}
+
+.heading{
+    animation: textFade 2s ease-in-out infinite;
+    /* background-color: #9b998f; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.headingcenter{
+    display: flex;
+    align-items: center;
+}
+
+.date{
+    display: flex;
+    align-items: center;
+}
+
+.hover{
+    background-color: #d16a26;
+    padding: 5px;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.hover:hover{
+    -webkit-box-shadow: 0px 0px 20px 0px #90d61f;
+    box-shadow: 0px 0px 20px 0px #90d61f;
+    transition: .8s ease;
+}
+
+.tri{
+    width: 100px;
+    height: auto;
+    filter: hue-rotate(90deg);
+}
+
+.tri2{
+    width: 100px;
+    height: auto;
+    filter: hue-rotate(90deg);
+    transform: rotate(180deg);
+}
+
+@keyframes blink {
+    50% {
+        color:black;
+    }
+   }
+   
+   @keyframes textFade {
+    50% {
+        color:#3b3b38;
+        text-shadow:#d16a26 1px 3px 3px;
+        }
+   }
+   
+   /* @keyframes textFade {
+    50% {
+        color:#c1b492;
+        text-shadow:#c1b492 1px 1px 6px;
+        }
+   } */
+
+   ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+   }
+   ::-webkit-scrollbar-thumb {
+    background: #d16a26
+   }
+   ::-webkit-scrollbar-thumb:hover{
+    background: linear-gradient(13deg, #cfcdc3 50%,#cfcdc3 50%);
+   }
+   ::-webkit-scrollbar-track{
+    background: #3b3b38;
+   }
+
+   ::selection {
+    background: #90d61f; /* WebKit/Blink Browsers */
+  }
+  ::-moz-selection {
+    background: #90d61f; /* Gecko Browsers */
+  }
